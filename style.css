@@ -157,3 +157,34 @@ input{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:1000px) {
+    .container{
+        width: 80%;
+    }
+}
+@media (max-width:900px) {
+    .container{
+        width: 95%;
+    }
+}
+@media (max-width:600px) {
+    .container{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .container section{
+        width: 100%;
+        margin: auto;
+    }
+    button, input, #custom{
+        font-size: 1rem;
+    }
+    .output-section button{
+        margin-top: 30px;
+    }
+    .tip-number > p, .total-number > p{
+        font-size: 2rem;
+    }
+
+}

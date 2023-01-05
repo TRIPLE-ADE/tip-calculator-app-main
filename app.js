@@ -45,7 +45,6 @@ custom.addEventListener('keyup', function (e) {
     if (people.value && bill.value) {
         
         let tip = Number(custom.value);
-        console.log(tip)
         const billInput = parseInt(bill.value);
         const peopleInput = parseInt(people.value);
         const billTipPercent = billInput * tip/100;
