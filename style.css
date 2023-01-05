@@ -1,0 +1,159 @@
+/*
+=============================================
+Global Styles
+=============================================
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    font-family: 'Space Mono', monospace;
+}
+:root{
+    --strongCyan: hsl(172, 67%, 45%);
+    --VeryDarkCyan: hsl(183, 100%, 15%);
+    --DarkGrayishCyan: hsl(186, 14%, 43%);
+    --GrayishCyan: hsl(184, 14%, 56%);
+    --LightGrayishCyan: hsl(185, 41%, 84%);
+    --VeryLightGrayish: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+
+}
+body{
+    background-color:var(--LightGrayishCyan) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+/*
+=============================================
+Main section Styles
+=============================================
+*/
+main{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+main > img{
+    padding-bottom: 70px;
+}
+
+.container{
+    width: 65%;
+    margin: auto;
+    background-color: var(--White);
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.container > section{
+    width: 50%;
+    border-radius: 15px;
+}
+
+/* input section styling */
+.input-section input:focus, .input-section input:hover {
+    border: 2px solid var(--strongCyan);
+}
+
+.bill, .tip{
+    padding-bottom: 20px;
+}
+.bill input, .people input{
+    display: block;
+    width: 100%;
+    border: 2px solid transparent;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    color: var(--DarkGrayishCyan);
+}
+input{
+    background-color: var(--VeryLightGrayish);
+}
+button{
+    background-color: var(--VeryDarkCyan);
+    color: var(--White);
+}
+button:focus{
+    background-color: var(--strongCyan);
+}
+button:hover{
+    background-color: var(--LightGrayishCyan);
+    color: var(--VeryDarkCyan);
+    cursor: pointer;
+}
+button, input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+input{
+    text-align: right;
+}
+.tip > div{
+    gap: 10px; 
+    display: grid;
+    grid-template-columns: repeat(3,31.5%);
+}
+.tip input{
+    grid-column: 3/4;
+}
+#custom{
+    font-size: 20px;
+    text-align: center;
+}
+#custom{
+    padding: 0;
+}
+
+/* output section styling */
+.output-section{
+    background-color: var(--VeryDarkCyan);
+    padding: 20px;
+    color: var(--DarkGrayishCyan);
+}
+.tip-output, .total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.output-section button{
+    margin-top: 110px;
+    text-align: center;
+    display: block;
+    width:100% ;
+    background-color:var(--LightGrayishCyan) ;
+    color: var(--VeryDarkCyan);
+    opacity: 0.4;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+.output-section button:hover{
+    background-color: var(--LightGrayishCyan);
+    opacity: 1;
+    cursor: pointer;
+    
+}
+
+.tip-number > p, .total-number > p{
+    font-size: 3rem;
+    color: var(--strongCyan);
+}
+.tip-info p:first-child, .total-info P:first-child{
+    color: var(--LightGrayishCyan);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
